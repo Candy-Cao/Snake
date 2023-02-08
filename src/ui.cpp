@@ -55,7 +55,7 @@ int LocalUi::OutPut(Frame &frame) {
     for (int j = 0; j < MAP_SIZE; j++) {
         cout << "--";
     }
-    cout << "(" << pos.first << ", " << pos.second << ")" << endl;
+    cout << endl << "APP VERSION(" << Snake_VERSION_MAJOR << "." << Snake_VERSION_MAJOR << ")" << endl;
     return 0;
 }
 

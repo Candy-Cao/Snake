@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Snake.dir/main.cpp.o CMakeFiles/Snake.dir/src/Game.cpp.o CMakeFiles/Snake.dir/src/food.cpp.o CMakeFiles/Snake.dir/src/snake.cpp.o CMakeFiles/Snake.dir/src/ui.cpp.o CMakeFiles/Snake.dir/src/user.cpp.o  -o Snake -lpthread -lncurses -levent 

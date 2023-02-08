@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 #include <mutex>
+
+#include "SnakeConfig.h"
 using namespace std;
 
 #define MAP_SIZE 22
