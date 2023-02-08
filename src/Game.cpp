@@ -1,7 +1,7 @@
 #include "Game.h"
 #include <functional>
 
-Game::Game(): startFlag(false), perfectFlag(false) {
+Game::Game(): startFlag(false), perfectFlag(false), gameOverFlag(false) {
     base = event_base_new();
     event_assign(&timeout, base, -1, EV_PERSIST, TimeOutCb, (void*)this);
     evutil_timerclear(&tv);
@@ -72,22 +72,12 @@ int Game::Tick() {
     return ret;
 }
 
-static void TimeOutCb(evutil_socket_t fd, short event, void *arg) {
-    (void)fd;
-    (void)event;
-    Game* game = (Game*)arg;
-    int ret = game->Tick();
-    if (ret != 0) {
-        game->GameOver();
-    }
-}
-
 int Game::Run() {
     int ret = 0;
     ui.OutPut(frame);
     thread user_control([this](){
         char ch;
-        while ((ch = user.Input()) != 'q') {
+        while (!gameOverFlag && (ch = user.Input()) != 'q') {
             switch (ch) {
             case 'a':
                 snake.Turn(LEFT);
@@ -101,12 +91,17 @@ int Game::Run() {
             case 's':
                 snake.Turn(DOWN);
                 break;
-            // case 'b':
-                
+            case 'b':
+                GameBreak();
+                break;
+            }
+            if (!startFlag) {
+                continue;
             }
             int ret = Tick();
             if (ret != 0) {
-                GameOver();
+                evtimer_del(&timeout);
+                event_base_loopbreak(base);
                 break;
             }
             evtimer_del(&timeout);
@@ -123,5 +118,25 @@ int Game::Run() {
 int Game::GameOver() {
     evtimer_del(&timeout);
     event_base_loopbreak(base);
-    return perfectFlag ? 1 : -1;
+    gameOverFlag = true;
+    user.~LocalUser();
+    exit(-1);
+}
+
+int Game::GameBreak() {
+    startFlag = !startFlag;
+    return 0;
+}
+
+static void TimeOutCb(evutil_socket_t fd, short event, void *arg) {
+    (void)fd;
+    (void)event;
+    Game* game = (Game*)arg;
+    if (!game->GetStartFlag()) {
+        return ;
+    }
+    int ret = game->Tick();
+    if (ret != 0) {
+        game->GameOver();
+    }
 }

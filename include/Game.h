@@ -9,6 +9,7 @@
 #include <event2/event_struct.h>
 #include <event2/util.h>
 #include <thread>
+#include <condition_variable>
 
 class Game {
 public:
@@ -20,9 +21,12 @@ public:
     int Tick();
     int Run();
     int GameOver();
+    int GameBreak();
+    bool GetStartFlag() {return startFlag;}
 private:
-    bool startFlag;
-    bool perfectFlag;
+    bool startFlag;//标志游戏是否开始
+    bool perfectFlag;//标志游戏是否完美通关
+    bool gameOverFlag;//标志游戏是否结束
     Food food;
     Snake snake;
     Plat plat;

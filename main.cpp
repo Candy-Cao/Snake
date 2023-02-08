@@ -6,8 +6,5 @@ int main() {
     if (ret == 1) {
         cerr << "Perfect!!!" << endl;
     }
-    else {
-        cout << "Game Over!!!" << endl;
-    }
     return 0;
 }
