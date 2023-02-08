@@ -1,13 +1,16 @@
 #include "Game.h"
 #include <functional>
 
-Game::Game(): startFlag(false) {
+Game::Game(): startFlag(false), perfectFlag(false) {
     base = event_base_new();
     event_assign(&timeout, base, -1, EV_PERSIST, TimeOutCb, (void*)this);
     evutil_timerclear(&tv);
 	tv.tv_sec = 1;
 	event_add(&timeout, &tv);
     GetCurFrame();
+}
+Game::~Game() {
+    event_base_free(base);
 }
 const Frame &Game::GetCurFrame() {
     frame = plat.ToFrame();
@@ -63,6 +66,9 @@ int Game::Tick() {
     }
     GetCurFrame();
     ui.OutPut(frame);
+    if (ret == 1) {
+        perfectFlag = true;
+    }
     return ret;
 }
 
@@ -70,10 +76,14 @@ static void TimeOutCb(evutil_socket_t fd, short event, void *arg) {
     (void)fd;
     (void)event;
     Game* game = (Game*)arg;
-    game->Tick();
+    int ret = game->Tick();
+    if (ret != 0) {
+        game->GameOver();
+    }
 }
 
 int Game::Run() {
+    int ret = 0;
     ui.OutPut(frame);
     thread user_control([this](){
         char ch;
@@ -94,10 +104,24 @@ int Game::Run() {
             // case 'b':
                 
             }
-            Tick();
+            int ret = Tick();
+            if (ret != 0) {
+                GameOver();
+                break;
+            }
+            evtimer_del(&timeout);
+            evtimer_add(&timeout, &tv);
         }
         return ;
     });
 
 	event_base_dispatch(base);
+    user_control.join();
+    return perfectFlag ? 1 : -1;
+}
+
+int Game::GameOver() {
+    evtimer_del(&timeout);
+    event_base_loopbreak(base);
+    return perfectFlag ? 1 : -1;
 }

@@ -2,6 +2,12 @@
 
 int main() {
     Game game;
-    game.Run();
+    int ret = game.Run();
+    if (ret == 1) {
+        cerr << "Perfect!!!" << endl;
+    }
+    else {
+        cout << "Game Over!!!" << endl;
+    }
     return 0;
 }

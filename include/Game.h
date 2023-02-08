@@ -14,12 +14,15 @@ class Game {
 public:
     Game();
     Game(vector<vector<int>> &vec): plat(vec) {}
+    ~Game();
     const Frame &GetCurFrame();
     int FreshFood();
     int Tick();
     int Run();
+    int GameOver();
 private:
     bool startFlag;
+    bool perfectFlag;
     Food food;
     Snake snake;
     Plat plat;
