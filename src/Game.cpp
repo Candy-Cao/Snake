@@ -107,6 +107,8 @@ int Game::Run() {
             evtimer_del(&timeout);
             evtimer_add(&timeout, &tv);
         }
+        evtimer_del(&timeout);
+        event_base_loopbreak(base);
         return ;
     });
 
