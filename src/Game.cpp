@@ -41,7 +41,7 @@ int Game::FreshFood() {
     food.SetEatenFlag(false);
     return 0;
 }
-/* return value: 0-succeed, -1-fail, 1-game over*/
+/* return value: 0-succeed, -1-fail, 1-game over perfect*/
 int Game::Tick() {
     lock_guard<mutex> lock(tickMutex);
     int ret = 0;

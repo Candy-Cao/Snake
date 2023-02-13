@@ -55,7 +55,8 @@ int LocalUi::OutPut(Frame &frame) {
     for (int j = 0; j < MAP_SIZE; j++) {
         cout << "--";
     }
-    cout << endl << "APP VERSION(" << Snake_VERSION_MAJOR << "." << Snake_VERSION_MINOR << ")" << endl;
+    cout << endl << "APP VERSION(" << Snake_VERSION_MAJOR << "." << Snake_VERSION_MINOR << ")" << "developer--candy" << endl;
+    cout << "操作方式:A--left, S--down, D--right, W--up, b--begin/break, q--quit" << endl;
     return 0;
 }
 
