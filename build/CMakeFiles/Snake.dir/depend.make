@@ -42,6 +42,11 @@ CMakeFiles/Snake.dir/src/ui.cpp.o: .././include/ui.h
 CMakeFiles/Snake.dir/src/ui.cpp.o: ../src/ui.cpp
 CMakeFiles/Snake.dir/src/ui.cpp.o: SnakeConfig.h
 
+CMakeFiles/Snake.dir/src/user.cpp.o: .././include/define.h
+CMakeFiles/Snake.dir/src/user.cpp.o: .././include/food.h
+CMakeFiles/Snake.dir/src/user.cpp.o: .././include/plat.h
+CMakeFiles/Snake.dir/src/user.cpp.o: .././include/snake.h
 CMakeFiles/Snake.dir/src/user.cpp.o: .././include/user.h
 CMakeFiles/Snake.dir/src/user.cpp.o: ../src/user.cpp
+CMakeFiles/Snake.dir/src/user.cpp.o: SnakeConfig.h
 

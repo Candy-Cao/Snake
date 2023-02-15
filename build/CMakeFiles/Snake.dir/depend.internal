@@ -43,5 +43,10 @@ CMakeFiles/Snake.dir/src/ui.cpp.o
  /home/caoyan/linux/create/Snake/src/ui.cpp
  SnakeConfig.h
 CMakeFiles/Snake.dir/src/user.cpp.o
+ .././include/define.h
+ .././include/food.h
+ .././include/plat.h
+ .././include/snake.h
  .././include/user.h
  /home/caoyan/linux/create/Snake/src/user.cpp
+ SnakeConfig.h

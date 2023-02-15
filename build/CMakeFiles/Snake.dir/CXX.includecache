@@ -83,6 +83,16 @@ ncurses.h
 -
 term.h
 -
+iostream
+-
+define.h
+.././include/define.h
+food.h
+.././include/food.h
+snake.h
+.././include/snake.h
+plat.h
+.././include/plat.h
 
 /home/caoyan/linux/create/Snake/main.cpp
 Game.h

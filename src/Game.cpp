@@ -65,7 +65,7 @@ int Game::Tick() {
         break;
     }
     GetCurFrame();
-    ui.OutPut(frame);
+    user.OutPut(frame);
     if (ret == 1) {
         perfectFlag = true;
     }
@@ -74,7 +74,7 @@ int Game::Tick() {
 
 int Game::Run() {
     int ret = 0;
-    ui.OutPut(frame);
+    user.OutPut(frame);
     thread user_control([this](){
         char ch;
         while (!gameOverFlag && (ch = user.Input()) != 'q') {
