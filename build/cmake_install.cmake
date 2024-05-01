@@ -1,4 +1,4 @@
-# Install script for directory: /home/caoyan/linux/create/Snake
+# Install script for directory: /home/candy/linux/Game/Snake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/caoyan/linux/create/Snake/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/candy/linux/Game/Snake/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

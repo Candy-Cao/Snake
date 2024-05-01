@@ -13,8 +13,6 @@ snake.h
 .././include/snake.h
 plat.h
 .././include/plat.h
-ui.h
-.././include/ui.h
 user.h
 .././include/user.h
 event2/event.h
@@ -62,18 +60,6 @@ food.h
 list
 -
 
-.././include/ui.h
-food.h
-.././include/food.h
-snake.h
-.././include/snake.h
-plat.h
-.././include/plat.h
-term.h
--
-iostream
--
-
 .././include/user.h
 unistd.h
 -
@@ -94,37 +80,33 @@ snake.h
 plat.h
 .././include/plat.h
 
-/home/caoyan/linux/create/Snake/main.cpp
+/home/candy/linux/Game/Snake/main.cpp
 Game.h
-/home/caoyan/linux/create/Snake/Game.h
+/home/candy/linux/Game/Snake/Game.h
 
-/home/caoyan/linux/create/Snake/src/Game.cpp
+/home/candy/linux/Game/Snake/src/Game.cpp
 Game.h
-/home/caoyan/linux/create/Snake/src/Game.h
+/home/candy/linux/Game/Snake/src/Game.h
 functional
 -
 
-/home/caoyan/linux/create/Snake/src/food.cpp
+/home/candy/linux/Game/Snake/src/food.cpp
 food.h
-/home/caoyan/linux/create/Snake/src/food.h
+/home/candy/linux/Game/Snake/src/food.h
 stdlib.h
 -
 time.h
 -
 
-/home/caoyan/linux/create/Snake/src/snake.cpp
+/home/candy/linux/Game/Snake/src/snake.cpp
 snake.h
-/home/caoyan/linux/create/Snake/src/snake.h
+/home/candy/linux/Game/Snake/src/snake.h
 cmath
 -
 
-/home/caoyan/linux/create/Snake/src/ui.cpp
-ui.h
-/home/caoyan/linux/create/Snake/src/ui.h
-
-/home/caoyan/linux/create/Snake/src/user.cpp
+/home/candy/linux/Game/Snake/src/user.cpp
 user.h
-/home/caoyan/linux/create/Snake/src/user.h
+/home/candy/linux/Game/Snake/src/user.h
 
 SnakeConfig.h
 

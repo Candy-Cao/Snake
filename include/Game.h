@@ -3,7 +3,7 @@
 #include "food.h"
 #include "snake.h"
 #include "plat.h"
-#include "ui.h"
+// #include "ui.h"
 #include "user.h"
 #include <event2/event.h>
 #include <event2/event_struct.h>
@@ -32,7 +32,7 @@ private:
     Plat plat;
     Frame frame;
     LocalUser user;
-    LocalUi ui;
+    // LocalUi ui;
     vector<pii> spaceVec;
 	struct timeval tv;
 	struct event_base *base;

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/caoyan/linux/create/Snake
+CMAKE_SOURCE_DIR = /home/candy/linux/Game/Snake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/caoyan/linux/create/Snake/build
+CMAKE_BINARY_DIR = /home/candy/linux/Game/Snake/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caoyan/linux/create/Snake/build/CMakeFiles /home/caoyan/linux/create/Snake/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/candy/linux/Game/Snake/build/CMakeFiles /home/candy/linux/Game/Snake/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/caoyan/linux/create/Snake/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/candy/linux/Game/Snake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,33 +231,6 @@ src/snake.cpp.s:
 	$(MAKE) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/snake.cpp.s
 .PHONY : src/snake.cpp.s
 
-src/ui.o: src/ui.cpp.o
-
-.PHONY : src/ui.o
-
-# target to build an object file
-src/ui.cpp.o:
-	$(MAKE) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/ui.cpp.o
-.PHONY : src/ui.cpp.o
-
-src/ui.i: src/ui.cpp.i
-
-.PHONY : src/ui.i
-
-# target to preprocess a source file
-src/ui.cpp.i:
-	$(MAKE) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/ui.cpp.i
-.PHONY : src/ui.cpp.i
-
-src/ui.s: src/ui.cpp.s
-
-.PHONY : src/ui.s
-
-# target to generate assembly for a file
-src/ui.cpp.s:
-	$(MAKE) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/ui.cpp.s
-.PHONY : src/ui.cpp.s
-
 src/user.o: src/user.cpp.o
 
 .PHONY : src/user.o
@@ -306,9 +279,6 @@ help:
 	@echo "... src/snake.o"
 	@echo "... src/snake.i"
 	@echo "... src/snake.s"
-	@echo "... src/ui.o"
-	@echo "... src/ui.i"
-	@echo "... src/ui.s"
 	@echo "... src/user.o"
 	@echo "... src/user.i"
 	@echo "... src/user.s"

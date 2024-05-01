@@ -6,7 +6,6 @@ CMakeFiles/Snake.dir/main.cpp.o: .././include/define.h
 CMakeFiles/Snake.dir/main.cpp.o: .././include/food.h
 CMakeFiles/Snake.dir/main.cpp.o: .././include/plat.h
 CMakeFiles/Snake.dir/main.cpp.o: .././include/snake.h
-CMakeFiles/Snake.dir/main.cpp.o: .././include/ui.h
 CMakeFiles/Snake.dir/main.cpp.o: .././include/user.h
 CMakeFiles/Snake.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Snake.dir/main.cpp.o: SnakeConfig.h
@@ -16,7 +15,6 @@ CMakeFiles/Snake.dir/src/Game.cpp.o: .././include/define.h
 CMakeFiles/Snake.dir/src/Game.cpp.o: .././include/food.h
 CMakeFiles/Snake.dir/src/Game.cpp.o: .././include/plat.h
 CMakeFiles/Snake.dir/src/Game.cpp.o: .././include/snake.h
-CMakeFiles/Snake.dir/src/Game.cpp.o: .././include/ui.h
 CMakeFiles/Snake.dir/src/Game.cpp.o: .././include/user.h
 CMakeFiles/Snake.dir/src/Game.cpp.o: ../src/Game.cpp
 CMakeFiles/Snake.dir/src/Game.cpp.o: SnakeConfig.h
@@ -33,14 +31,6 @@ CMakeFiles/Snake.dir/src/snake.cpp.o: .././include/plat.h
 CMakeFiles/Snake.dir/src/snake.cpp.o: .././include/snake.h
 CMakeFiles/Snake.dir/src/snake.cpp.o: ../src/snake.cpp
 CMakeFiles/Snake.dir/src/snake.cpp.o: SnakeConfig.h
-
-CMakeFiles/Snake.dir/src/ui.cpp.o: .././include/define.h
-CMakeFiles/Snake.dir/src/ui.cpp.o: .././include/food.h
-CMakeFiles/Snake.dir/src/ui.cpp.o: .././include/plat.h
-CMakeFiles/Snake.dir/src/ui.cpp.o: .././include/snake.h
-CMakeFiles/Snake.dir/src/ui.cpp.o: .././include/ui.h
-CMakeFiles/Snake.dir/src/ui.cpp.o: ../src/ui.cpp
-CMakeFiles/Snake.dir/src/ui.cpp.o: SnakeConfig.h
 
 CMakeFiles/Snake.dir/src/user.cpp.o: .././include/define.h
 CMakeFiles/Snake.dir/src/user.cpp.o: .././include/food.h

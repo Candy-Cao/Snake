@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/caoyan/linux/create/Snake
+CMAKE_SOURCE_DIR = /home/candy/linux/Game/Snake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/caoyan/linux/create/Snake/build
+CMAKE_BINARY_DIR = /home/candy/linux/Game/Snake/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Snake.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Snake.dir/flags.make
 
 CMakeFiles/Snake.dir/main.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snake.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/main.cpp.o -c /home/caoyan/linux/create/Snake/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/candy/linux/Game/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Snake.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/main.cpp.o -c /home/candy/linux/Game/Snake/main.cpp
 
 CMakeFiles/Snake.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoyan/linux/create/Snake/main.cpp > CMakeFiles/Snake.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/candy/linux/Game/Snake/main.cpp > CMakeFiles/Snake.dir/main.cpp.i
 
 CMakeFiles/Snake.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoyan/linux/create/Snake/main.cpp -o CMakeFiles/Snake.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/candy/linux/Game/Snake/main.cpp -o CMakeFiles/Snake.dir/main.cpp.s
 
 CMakeFiles/Snake.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Snake.dir/main.cpp.o.provides.build: CMakeFiles/Snake.dir/main.cpp.o
 
 CMakeFiles/Snake.dir/src/Game.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Snake.dir/src/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/Game.cpp.o -c /home/caoyan/linux/create/Snake/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/candy/linux/Game/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Snake.dir/src/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/Game.cpp.o -c /home/candy/linux/Game/Snake/src/Game.cpp
 
 CMakeFiles/Snake.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoyan/linux/create/Snake/src/Game.cpp > CMakeFiles/Snake.dir/src/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/candy/linux/Game/Snake/src/Game.cpp > CMakeFiles/Snake.dir/src/Game.cpp.i
 
 CMakeFiles/Snake.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoyan/linux/create/Snake/src/Game.cpp -o CMakeFiles/Snake.dir/src/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/candy/linux/Game/Snake/src/Game.cpp -o CMakeFiles/Snake.dir/src/Game.cpp.s
 
 CMakeFiles/Snake.dir/src/Game.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Snake.dir/src/Game.cpp.o.provides.build: CMakeFiles/Snake.dir/src/Gam
 
 CMakeFiles/Snake.dir/src/food.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/food.cpp.o: ../src/food.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Snake.dir/src/food.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/food.cpp.o -c /home/caoyan/linux/create/Snake/src/food.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/candy/linux/Game/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Snake.dir/src/food.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/food.cpp.o -c /home/candy/linux/Game/Snake/src/food.cpp
 
 CMakeFiles/Snake.dir/src/food.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/src/food.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoyan/linux/create/Snake/src/food.cpp > CMakeFiles/Snake.dir/src/food.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/candy/linux/Game/Snake/src/food.cpp > CMakeFiles/Snake.dir/src/food.cpp.i
 
 CMakeFiles/Snake.dir/src/food.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/src/food.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoyan/linux/create/Snake/src/food.cpp -o CMakeFiles/Snake.dir/src/food.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/candy/linux/Game/Snake/src/food.cpp -o CMakeFiles/Snake.dir/src/food.cpp.s
 
 CMakeFiles/Snake.dir/src/food.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Snake.dir/src/food.cpp.o.provides.build: CMakeFiles/Snake.dir/src/foo
 
 CMakeFiles/Snake.dir/src/snake.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/snake.cpp.o: ../src/snake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Snake.dir/src/snake.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/snake.cpp.o -c /home/caoyan/linux/create/Snake/src/snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/candy/linux/Game/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Snake.dir/src/snake.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/snake.cpp.o -c /home/candy/linux/Game/Snake/src/snake.cpp
 
 CMakeFiles/Snake.dir/src/snake.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/src/snake.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoyan/linux/create/Snake/src/snake.cpp > CMakeFiles/Snake.dir/src/snake.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/candy/linux/Game/Snake/src/snake.cpp > CMakeFiles/Snake.dir/src/snake.cpp.i
 
 CMakeFiles/Snake.dir/src/snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/src/snake.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoyan/linux/create/Snake/src/snake.cpp -o CMakeFiles/Snake.dir/src/snake.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/candy/linux/Game/Snake/src/snake.cpp -o CMakeFiles/Snake.dir/src/snake.cpp.s
 
 CMakeFiles/Snake.dir/src/snake.cpp.o.requires:
 
@@ -153,42 +153,18 @@ CMakeFiles/Snake.dir/src/snake.cpp.o.provides: CMakeFiles/Snake.dir/src/snake.cp
 CMakeFiles/Snake.dir/src/snake.cpp.o.provides.build: CMakeFiles/Snake.dir/src/snake.cpp.o
 
 
-CMakeFiles/Snake.dir/src/ui.cpp.o: CMakeFiles/Snake.dir/flags.make
-CMakeFiles/Snake.dir/src/ui.cpp.o: ../src/ui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Snake.dir/src/ui.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/ui.cpp.o -c /home/caoyan/linux/create/Snake/src/ui.cpp
-
-CMakeFiles/Snake.dir/src/ui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/src/ui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoyan/linux/create/Snake/src/ui.cpp > CMakeFiles/Snake.dir/src/ui.cpp.i
-
-CMakeFiles/Snake.dir/src/ui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/src/ui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoyan/linux/create/Snake/src/ui.cpp -o CMakeFiles/Snake.dir/src/ui.cpp.s
-
-CMakeFiles/Snake.dir/src/ui.cpp.o.requires:
-
-.PHONY : CMakeFiles/Snake.dir/src/ui.cpp.o.requires
-
-CMakeFiles/Snake.dir/src/ui.cpp.o.provides: CMakeFiles/Snake.dir/src/ui.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Snake.dir/build.make CMakeFiles/Snake.dir/src/ui.cpp.o.provides.build
-.PHONY : CMakeFiles/Snake.dir/src/ui.cpp.o.provides
-
-CMakeFiles/Snake.dir/src/ui.cpp.o.provides.build: CMakeFiles/Snake.dir/src/ui.cpp.o
-
-
 CMakeFiles/Snake.dir/src/user.cpp.o: CMakeFiles/Snake.dir/flags.make
 CMakeFiles/Snake.dir/src/user.cpp.o: ../src/user.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Snake.dir/src/user.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/user.cpp.o -c /home/caoyan/linux/create/Snake/src/user.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/candy/linux/Game/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Snake.dir/src/user.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Snake.dir/src/user.cpp.o -c /home/candy/linux/Game/Snake/src/user.cpp
 
 CMakeFiles/Snake.dir/src/user.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Snake.dir/src/user.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoyan/linux/create/Snake/src/user.cpp > CMakeFiles/Snake.dir/src/user.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/candy/linux/Game/Snake/src/user.cpp > CMakeFiles/Snake.dir/src/user.cpp.i
 
 CMakeFiles/Snake.dir/src/user.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Snake.dir/src/user.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoyan/linux/create/Snake/src/user.cpp -o CMakeFiles/Snake.dir/src/user.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/candy/linux/Game/Snake/src/user.cpp -o CMakeFiles/Snake.dir/src/user.cpp.s
 
 CMakeFiles/Snake.dir/src/user.cpp.o.requires:
 
@@ -207,7 +183,6 @@ Snake_OBJECTS = \
 "CMakeFiles/Snake.dir/src/Game.cpp.o" \
 "CMakeFiles/Snake.dir/src/food.cpp.o" \
 "CMakeFiles/Snake.dir/src/snake.cpp.o" \
-"CMakeFiles/Snake.dir/src/ui.cpp.o" \
 "CMakeFiles/Snake.dir/src/user.cpp.o"
 
 # External object files for target Snake
@@ -217,11 +192,10 @@ Snake: CMakeFiles/Snake.dir/main.cpp.o
 Snake: CMakeFiles/Snake.dir/src/Game.cpp.o
 Snake: CMakeFiles/Snake.dir/src/food.cpp.o
 Snake: CMakeFiles/Snake.dir/src/snake.cpp.o
-Snake: CMakeFiles/Snake.dir/src/ui.cpp.o
 Snake: CMakeFiles/Snake.dir/src/user.cpp.o
 Snake: CMakeFiles/Snake.dir/build.make
 Snake: CMakeFiles/Snake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/caoyan/linux/create/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Snake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/candy/linux/Game/Snake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Snake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Snake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,7 +207,6 @@ CMakeFiles/Snake.dir/requires: CMakeFiles/Snake.dir/main.cpp.o.requires
 CMakeFiles/Snake.dir/requires: CMakeFiles/Snake.dir/src/Game.cpp.o.requires
 CMakeFiles/Snake.dir/requires: CMakeFiles/Snake.dir/src/food.cpp.o.requires
 CMakeFiles/Snake.dir/requires: CMakeFiles/Snake.dir/src/snake.cpp.o.requires
-CMakeFiles/Snake.dir/requires: CMakeFiles/Snake.dir/src/ui.cpp.o.requires
 CMakeFiles/Snake.dir/requires: CMakeFiles/Snake.dir/src/user.cpp.o.requires
 
 .PHONY : CMakeFiles/Snake.dir/requires
@@ -243,6 +216,6 @@ CMakeFiles/Snake.dir/clean:
 .PHONY : CMakeFiles/Snake.dir/clean
 
 CMakeFiles/Snake.dir/depend:
-	cd /home/caoyan/linux/create/Snake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/caoyan/linux/create/Snake /home/caoyan/linux/create/Snake /home/caoyan/linux/create/Snake/build /home/caoyan/linux/create/Snake/build /home/caoyan/linux/create/Snake/build/CMakeFiles/Snake.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/candy/linux/Game/Snake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/candy/linux/Game/Snake /home/candy/linux/Game/Snake /home/candy/linux/Game/Snake/build /home/candy/linux/Game/Snake/build /home/candy/linux/Game/Snake/build/CMakeFiles/Snake.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Snake.dir/depend
 

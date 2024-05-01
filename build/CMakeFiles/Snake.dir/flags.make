@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/caoyan/linux/create/Snake/build -I/home/caoyan/linux/create/Snake/./include 
+CXX_INCLUDES = -I/home/candy/linux/Game/Snake/build -I/home/candy/linux/Game/Snake/./include 
 
